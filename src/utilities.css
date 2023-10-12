@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+:root{
+    --bg-primary-clr:hsl(235, 21%, 11%);
+    --bg-secodary-clr: hsl(0, 0%, 98%);
+    --bg-third-clr:hsl(235, 24%, 19%);
+    --primary-clr:hsl(233, 11%, 84%);
+    --secondary-clr:hsl(235, 19%, 35%);
+    --third-clr:hsl(234, 11%, 52%);
+    --hover-clr:hsl(236, 33%, 92%);
+    --completed-clr:hsl(236, 9%, 61%);
+}
+
+body{
+  background-color: var(--bg-primary-clr);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+

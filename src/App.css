@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
+@import"./reset.css";
+@import"./utilities.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* =================== */
+.headerImg{
+    background-image: url(./assets/images/bg-mobile-dark.png);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+    gap: 12rem;
+    margin-top: -15rem;
+    margin-bottom: 0.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    font-size: xx-large;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.span{
+    text-decoration: line-through;
+    color: var(--completed-clr);
 }
+/* === header css done === */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ======================= */
+input[type="text"]{
+    padding: 1rem;
+    border: none;
+}
+section{
+    display: grid;
+    justify-content: center;
+}
+ul{
+    margin-top: 2rem;
+}
+span{
+    padding-left: 1rem;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #484b6a;
+    border-radius: 50%;
+    vertical-align: middle;
+    appearance: none;
+    outline: none;
+}
+input[type="checkbox"]:checked{
+    background: url(./assets/images/icon-check.png),linear-gradient(to right, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+hr{
+    height: 0.01rem;
+    background-color: #484b6a;
+}
+.li,.option{
+    padding: 1rem;
+}
+.option,.filter{
+    font-size: 14.5px;
+    color: var(--third-clr);
+
+}
+/* h3:focus{
+    color: hsl(220, 98%, 61%);
+} */
+h3:hover{
+    color: #ffffff;
+}
+.filter{
+    margin-top: 1rem;
+    padding-block: 1rem;
+    gap: 1rem;
+
+}
+input[type="text"],
+ul{
+    width: 22rem;
+    color: var(--primary-clr);
+}
+input[type="text"],
+ul,.filter{
+    border-radius: 5px;
+    background-color: var(--bg-third-clr);
+}
+img,button,input,.filter,h4{
+    cursor: pointer;
+}
+/* === main css done === */
+
+/* ======================= */
+@media (min-width:560px){
+    .headerImg{
+        background-image: url(./assets/images/bg-desktop-dark.png);
+        background-size: cover;
+    }
+    .title{
+        margin-top: -10rem;
+        gap: 19rem;
+    }
+    input[type="text"],ul{
+        width: 30rem;
+    }
+    .filter{
+        position: relative;
+        bottom: 3.8rem;
+        right: 1rem;
+        background-color: transparent;
+    }
 }
